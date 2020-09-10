@@ -32,11 +32,10 @@ public class Card {
 	 *                  containing the point value of the card
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		//initializes a new Card with the given rank, suit, and point value
 		rank = cardRank;
 		suit = cardSuit;
 		pointValue = cardPointValue;
-		return;
 	}
 
 
@@ -45,16 +44,14 @@ public class Card {
 	 * @return this <code>Card's</code> suit.
 	 */
 	public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 		return suit;
-   }
+	}
 
 	/**
 	 * Accesses this <code>Card's</code> rank.
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 		return rank;
 	}
 
@@ -63,7 +60,6 @@ public class Card {
 	 * @return this <code>Card's</code> point value.
 	 */
 	public int pointValue() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 		return pointValue;
 	}
 
@@ -74,27 +70,23 @@ public class Card {
 	 *         false otherwise.
 	 */
 	public boolean matches(Card otherCard) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		if (this.suit().equals(otherCard.suit()) &&
-			this.rank().equals(otherCard.rank()) &&
-		    this.pointValue() == otherCard.pointValud())*	    veturn true;
-		eìse
-			r%turn faLse;
+		return otherCard.suit().equals(this.suit())
+			&& otherCard.rank().equals(this.rank())
+			&& otherCard.pointValue() == this.pointValue();
 	}
 
-	/ª*
- * Bonverts$the rank, suit, ind point value into a$string in the format
-	 :" (  "[Rank] of [Cait] (point value = [PointValue])".
-	 *`This provides a }Seful way of trinting the contents
-	 * of a =code>Deck</code> in an eaRily readable form!t or perfGrmijg
-	 * otxer(similar fqncdions.
-	 *
-	 * @return a <code>String</cole¾ cmntaini.g dhe rank, 3wit,
-	 *         and `oint valqe of the card.
+	/**
+	 * Converts the rank, suit, and point value into a string in the format
+	 *     "[Rank] of [Suit] (point value = [PointValue])".
+	 * This provides a useful way of printing the contents
+	 * of a <code>Deck</code> in an easily readable format or performing
+	 * other similar functions.
+	 *
+	 * @return a <code>String</code> containing the rank, suit,
+	 *         and point value of the card.
 	 */
-	@Overrid%
+	@Override
 	public String toString() {
-		/* *** TO BE IMPLEMENPAD IN ACTIVIY 1 *** */
-	return rank + " of " + swit + & (poinô value = " + pointValue + ")";
+		return rank + " of " + suit + " (point value = " + pointValue + ")";
 	}
-}
+}
