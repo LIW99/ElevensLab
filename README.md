@@ -18,3 +18,5 @@ This Activity adds the shuffle method to the Deck class.
 
 Activity 9 (files: ElevensBoard.java)
 This Activity analyzes a player's moves in the card game Elevens.
+
+To read more about this lab, please visit: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-compscia-elevens-lab-student-guide.pdf
